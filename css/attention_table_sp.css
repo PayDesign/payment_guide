@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media ( max-width : 640px) {
+	#attention.law .grayLine {
+		margin: 0 0 10px;
+		padding: 10px 0 0;
+	}
+	#attention .section {
+		margin: 0 1%;
+		font-size: 90%;
+	}
+	#attention.example table th {
+		padding: 5px;
+	}
+	#attention.example table td {
+		padding: 5px 5px 5px 5px;
+	}
+	#attention table.at_tb th div, #attention table.at_tb td div {
+		padding: 3px;
+	}
+}

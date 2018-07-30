@@ -53,65 +53,6 @@
         width: 90%;
         margin-right: 2%;
     }
-    #openMenu {
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        display: none;
-    }
-    #openMenu.openMenu_btm {
-        position: inherit;
-        display: block;
-    }
-
-    #openMenu .menuInner {
-        background: #d1d7e1;
-        padding: 20px 0;
-    }
-    #openMenu .btmLine {
-        clear: both;
-        background: url(../images/menu_line.png) repeat-x bottom;
-        width: 100%;
-        height: 5px;
-    }
-    #openMenu .menuInner ul {
-        width: 95%;
-        margin: 0 auto;
-        overflow: hidden;
-        border-radius: 7px;
-        -webkit-border-radius: 7px;
-        -moz-border-radius: 7px;
-    }
-    #openMenu ul li {
-        width: 100%;
-        float: none;
-    }
-    #openMenu ul li a {
-        display: block;
-        padding: 3% 5%;
-        color: #FFF;
-        background: url(../images/tb/open_list.gif) 93% center no-repeat #0085ca;
-        -moz-background-size: 20px 20px;
-        background-size: 20px 20px;
-        font-size: 125%;
-    }
-
-    #openMenu ul li a {
-        border-top: 1px solid #016195;
-        border-bottom: 1px solid #17affe;
-    }
-    #openMenu ul li:first-child a {
-        border-top: none;
-    }
-    #openMenu ul li:last-child a {
-        border-bottom: none;
-    }
-    #openMenu ul li#close a {
-        background: url(../images/tb/close.gif) 93% center no-repeat #FFF;
-        -moz-background-size: 20px 20px;
-        background-size: 20px 20px;
-        color: #0085ca;
-    }
 
     /*コンテンツ*/
 
@@ -224,14 +165,6 @@
     .footerTop .leftArea ul {
         margin-bottom: 10px;
     }
-    #footer .footerBtm_inner ul {
-        margin: 0 3%;
-    }
-    #footer .footerBtm_inner ul li {
-        float: left;
-        padding: 0 0 0 10px;
-        margin-right: 8%;
-    }
     #footer .copyright {
         padding-bottom: 70px;
     }
@@ -260,41 +193,6 @@
     /* ==========================================================
         各ページ共通パーツ
     ========================================================== */
-
-    /*　------------ 導入事例タイル ------------　*/
-
-    #content .caseArea .box {
-        width: 100%;
-        float: none;
-        margin: 0 auto 10px;
-    }
-    #content .caseArea .box a {
-        height: auto!important;
-    }
-    #content .caseArea .box a .text,
-    #content .caseArea .box a:hover .text {
-        background: url(../images/top/tile_indent_off.png) 0 0 no-repeat;
-        -moz-background-size: 20px 20px;
-        background-size: 20px 20px;
-        display: block;
-        padding: 0 0 0 30px;
-        min-height: 20px;
-        line-height: 1.3;
-    }
-
-    /*　------------ 最適なサービスタイル ------------　*/
-
-    #content .contentInner .service_tileArea .tile {
-        width: 100%;
-        float: none;
-        margin: 0 auto 10px;
-    }
-    #content .contentInner .service_tileArea .tile a {
-        height: auto!important;
-    }
-    #content .contentInner .service_tileArea a .title {
-        height: auto!important;
-    }
 
     /*　---------------- 導入をご検討の方、企業情報、契約済みの加盟店様　インデックスページのタイル ----------------　*/
 

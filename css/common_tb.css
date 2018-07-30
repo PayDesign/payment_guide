@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* ==========================================================
+	タブレット 641px以上 980px以下
+========================================================== */
+@media (min-width: 641px) and (max-width: 980px) {
+
+html body{
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/*固定ヘッダー　グローバルナビ*/
+#header {
+	border-bottom: 1px solid #cfd2d6;
+}
+
+.tbsp_foot {
+	margin: 0 10%;
+}
+
+/* ==========================================================
+	各ページ共通パーツ
+========================================================== */
+
+/*▼commonStyel-------------*/
+.tb {
+	display: block;
+}
+.pc {
+	display: none;
+}
+.sp {
+	display: none;
+}
+.pc_none {display: block;}
+.tb_none {display: none;}
+.sp_none {display: block;}
+
+
+}/* ▲(min-width: 641px) and (max-width: 980px) end▲*/
+
+/* ==========================================================
+	微調整 981px以上 1000px以下
+========================================================== */
+@media (min-width: 981px) and (max-width: 1000px) {
+
+#header .headerInner {
+	margin: 0 2%;
+}
+
+}/* ▲(min-width: 981px) and (max-width: 1000px) end▲*/

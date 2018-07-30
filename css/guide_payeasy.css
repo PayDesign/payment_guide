@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/* ==========================================================
+	共通
+========================================================== */
+
+#guide #header {
+	background: #ffffff;
+	position: inherit;
+}
+#guide .header_btm1 {
+	clear: both;
+	background: #0069ba;
+	height: 2px;
+}
+#guide .header_btm2 {
+	clear: both;
+	background: #0069ba;
+	height: 2px;
+}
+#guide .header_btm3 {
+	clear: both;
+	background: #0069ba;
+	height: 2px;
+}
+#guide .header_btmW {
+	clear: both;
+	background: #fff;
+	height: 1px;
+}
+
+#guide #header .headerText {
+	color:#333333;
+	width: 85%;
+	display: inline-block;
+	vertical-align: middle;
+	/display: inline;
+	/zoom: 1;
+}
+#guide #header .headerText .subTitle {
+        color:#555555;
+	font-size: 110%;
+	letter-spacing: 2px;
+	line-height: 1.3;
+	margin-bottom: 0;
+}
+#guide #header .headerText .title {
+	font-size: 200%;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	line-height: 1.3;
+	margin-bottom: 0;
+}
+#guide .explanation {
+	margin: 20px 0;
+}
+#guide .explanation li {
+	background: url(../images/list_payeasy.png) 0 10px no-repeat;
+	-moz-background-size: 6px 6px;
+	background-size: 6px 6px;
+	padding-left: 16px;
+}
+
+
+#guide .explanation2 {
+	margin: 10px 0;
+}
+#guide .explanation2 li {
+	background: url(../images/icon_external_link.png) 0 8px no-repeat;
+	-moz-background-size:10px10px;
+	background-size: 10px 10px;
+	padding-left: 16px;
+	font-weight:bold;
+	line-height: 28px;
+}
+
+#guide .section {
+	margin: 0 2%;
+}
+#guide .leftText {
+	width: 80%;
+	float: left;
+	margin:5px 0px;
+}
+#guide .leftText .numberImg {
+	width: 8%;
+	margin-right: 2%;
+	display: inline-block;
+	vertical-align: middle;
+	/display: inline;
+	/zoom: 1;
+}
+#guide h5 {
+	font-size: 130%;
+	font-weight: bold;
+	width: 88%;
+	display: inline-block;
+	vertical-align: middle;
+	/display: inline;
+	/zoom: 1;
+}
+#guide .leftText .detailText {
+	margin-left: 10.5%;
+	margin-top: 10px;
+}
+#guide .rightImg {
+	width: 35%;
+	float: right;
+}
+
+#guide .blue_dotLine_img {
+	clear: both;
+	padding: 40px 0;
+}
+
+#guide .numberImg {
+	width: 5%;
+	margin-right: 1%;
+	display: inline-block;
+	vertical-align: middle;
+	/display: inline;
+	/zoom: 1;
+}
+#guide .bgGray {
+	background: #eaf4ee;
+	padding: 5.7% 14.2%;
+	margin-top: 20px;
+}
+
+#guide .bgGray2 {
+	background: #eaf4ee;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#guide.lawson #header .headerText {
+	width: 80%;
+}
+#guide.lawson .explanation {
+	margin: 0 0 50px;
+}
+#guide .firstText {
+	margin: 50px 0 20px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 10px;
+}
+#guide .firstText .lawson { width: 80px;}
+#guide .firstText .seicomart { width: 100px;}
+#guide .firstText .ministop { width: 86px;}
+
+#guide .firstText a {
+	display: inline;
+	color: #28a6e8;
+}
+#guide .firstText a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* ==========================================================
+	PC用1220以上
+========================================================== */
+
+@media (min-width: 1000px)  {
+
+#guide #header .headerInner,
+#guide #content .contentInner {
+	width: 900px;
+	margin: 0 auto;
+}
+}/* ▲min-width: 1220px▲*/
+
+
+span.wideyellow {
+      background-color: #ffff55;
+      padding: 0.3em 0px;
+   }
+
