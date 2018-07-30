@@ -168,11 +168,6 @@ span.linkPosAdjust {
     -webkit-border-radius: 7px 7px 0 0;
     -moz-border-radius: 7px 7px 0 0;
 }
-
-#content .attention {
-    text-indent: -1em;
-    padding-left: 1em;
-}
 #content .red {
     color: #de1e1e;
 }

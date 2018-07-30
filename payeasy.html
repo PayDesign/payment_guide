@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="ja" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <title>ペイジーでのお支払い方法</title>
+    <link rel="stylesheet" type="text/css" href="./css/oocss.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/default_payeasy.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/common_payeasy.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/common_tb.css" media="screen,tv,projection" />
+    <link rel="stylesheet" type="text/css" href="./css/common_sp_payeasy.css" media="screen,tv,projection" />
+    <link rel="stylesheet" type="text/css" href="./css/guide_payeasy.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/guide_sp_payeasy.css" media="all" />
+    <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+</head>
+<body id="guide" class="seven">
+<div id="header" class="heightLine-header">
+    <div class="headerInner clearfix">
+        <div class="headerText">
+            <p class="subTitle">ネットバンキング・ATM</p>
+            <p class="title">ペイジーでのお支払いについて</p>
+        </div>
+    </div>
+    <!--headerInner-->
+</div>
+<!--header-->
+<div class="header_btm1"></div>
+<div class="header_btm2"></div>
+<div class="header_btm3"></div>
+
+<div id="content" class="page-top">
+    <div class="contentInner">
+
+        <div class="explanation">
+            <ul>
+                <li><span class="wideyellow">｢収納機関番号｣｢お客様番号｣｢確認番号｣</span>はお支払いの際、必要な番号です。<span class="wideyellow">「お支払内容のご確認」</span>ページ上に表示されますので、画面を印刷いただくかメモをお取りいただきますようお願い致します。</li>
+                <li>Pay-easy(ペイジー)とは金融機関のインターネットバンキング、モバイルバンキングやATMから｢いつも・どこでも・かんたんに｣支払えるサービスです。</li>
+            </ul>
+        </div>
+        <h4>ペイジーでのお支払方法</h4>
+
+        <div class="section">
+            <div class="leftText">
+                <div class="explanation2">
+                    <ul>
+                        <li><a href="./payeasy/atm.html" target="_blank">金融機関ATMでのお支払い方法</a></li>
+                        <li><a href="./payeasy/bank.html" target="_blank">金融機関インターネットバンキングでのお支払い方法</a></li>
+                        <li><a href="./payeasy/bankm.html" target="_blank">モバイルバンキングでのお支払い方法</a></li>
+                        <li><a href="./payeasy/yuchoatm.html" target="_blank">ゆうちょ銀行/郵便局ATMでのお支払い方法</a></li>
+                        <li><a href="./payeasy/yuchodirect.html" target="_blank">ゆうちょダイレクトでのお支払い方法</a></li>
+                        <li><a href="./payeasy/list.html" target="_blank">ペイジー対応金融機関一覧</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightImg">
+                <p></p>
+            </div>
+        </div>
+        <!--section-->
+
+        <div class="blue_dotLine_img sp_none">
+            <img src="./images/under_arrow_payeasy_last.png" />
+        </div>
+        <div class="blue_dotLine_img sp">
+            <img src="./images/under_arrow_payeasy_sp_last.png" />
+        </div>
+
+        <div class="section"></div>
+        <!--section-->
+    </div>
+    <!--contentInner-->
+</div>
+
+<!-- ========== /content ========== -->
+<p id="page-top"><a href="#guide">▲</a></p>
+<div class="copyright">
+    <p>© Metaps Payment Inc.</p>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        var showFlug = false;
+        var topBtn = $('#page-top');
+        topBtn.css('bottom', '-100px');
+        var showFlug = false;
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                if (showFlug == false) {
+                    showFlug = true;
+                    topBtn.stop().animate({'bottom' : '50px'}, 200);
+                }
+            } else {
+                if (showFlug) {
+                    showFlug = false;
+                    topBtn.stop().animate({'bottom' : '-100px'}, 200);
+                }
+            }
+        });
+        //スクロールしてトップ
+        topBtn.click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

@@ -66,6 +66,20 @@ body {
 	margin-bottom: 0;
 }
 
+.anchorArea {
+	background: #d5dae3;
+	padding: 1.5%;
+	overflow: hidden;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.anchorArea ul li {
+    float: left;
+    margin-right: 2%;
+}
+
 /*コンテンツ*/
 #content .contentInner {
 	margin: 0 3%;
