@@ -1,0 +1,103 @@
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="ja" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <title>デイリーヤマザキ・ヤマザキデイリーストアーのお支払い方法</title>
+    <link rel="stylesheet" type="text/css" href="./css/oocss.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/common_Daliy.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/common_tb.css" media="screen,tv,projection" />
+    <link rel="stylesheet" type="text/css" href="./css/common_sp_daily.css" media="screen,tv,projection" />
+    <link rel="stylesheet" type="text/css" href="./css/guide_Daliy.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/guide_sp_Daliy.css" media="all" />
+    <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+</head>
+<body id="guide" class="seven">
+
+<div id="header" class="heightLine-header">
+    <div class="headerInner clearfix">
+        <!--	<div class="logoArea">
+              <p></p>
+          </div> -->
+        <div class="headerText">
+            <p class="subTitle">コンビニ決済・オンラインタイプ　お支払い方法</p>
+            <p class="title">デイリーヤマザキ・ヤマザキデイリーストアーでのお支払い方法</p>
+        </div>
+    </div><!--headerInner-->
+</div><!--header-->
+<div class="header_btm1"></div>
+<div class="header_btmW"></div>
+<div class="header_btm2"></div>
+
+<div id="content"　class="page-top">
+    <div class="contentInner">
+
+        <div class="explanation">
+            <ul>
+                <li>お客様がインターネット上のサイトでお申込み・ご注文された代金を、デイリーヤマザキ・ヤマザキデイリーストアーの店頭レジにて現金でお支払い頂ける方法です。</li>
+                <li><span class="wideyellow">Web画面上に、レジでのお支払い時に必要な「オンライン決済番号」が表示されますので、メモ等に控え、レジにお持ち頂き代金をお支払いください。</span></li>
+            </ul>
+        </div>
+
+        <h4>お支払い手順</h4>
+
+        <div class="section">
+            <div class="leftText">
+                <p class="numberImg"><img src="./images/daliy_number1.png" alt="1" /></p>
+                <h5>デイリーヤマザキ・ヤマザキデイリーストアー店頭のレジでお支払い</h5>
+                <p class="detailText"><span class="wideyellow">コンビニ店頭に「オンライン決済番号」をお持ち頂き、お支払いください。代金をお支払い後、レシートが発行されます。 大切に保管してください。</span></p>
+            </div>
+            <div class="rightImg">
+                <p><img src="./images/daliy_shop01.png" /></p>
+                <p><img src="./images/daliy_regi.png" /></p>
+                <p style="margin-top:20px;"><img src="./images/daliy01_re.png" /></p>
+            </div>
+        </div>
+
+
+        <div class="blue_dotLine_img sp_none"><img src="./images/under_arrow_CK_last.png" /></div>
+        <div class="blue_dotLine_img sp"><img src="./images/under_arrowEnd_CK_sp.png" /></div>
+
+
+    </div><!--contentInner-->
+</div>
+
+<!-- ========== /content ========== -->
+<p id="page-top"><a href="#guide">▲</a></p>
+<div class="copyright">
+    <p>© Metaps Payment Inc.</p>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        var showFlug = false;
+        var topBtn = $('#page-top');
+        topBtn.css('bottom', '-100px');
+        var showFlug = false;
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                if (showFlug == false) {
+                    showFlug = true;
+                    topBtn.stop().animate({'bottom' : '50px'}, 200);
+                }
+            } else {
+                if (showFlug) {
+                    showFlug = false;
+                    topBtn.stop().animate({'bottom' : '-100px'}, 200);
+                }
+            }
+        });
+        //スクロールしてトップ
+        topBtn.click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    });
+</script>
+</body>
+</html

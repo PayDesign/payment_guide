@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,form,/*input,*/th,td{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size: 100%;
+}
+#right p {
+	margin-bottom: 10px;
+}
+img{
+	border:0;
+	width:100%;
+}
+img.noScale{
+	width:auto;
+}
+img.lineHeihgt{
+	height: 1.2em;
+	width: auto;
+}
+
+ul,ol{
+	list-style:none;
+}
+
+address,em,strong,caption{
+	font-style:normal;
+	font-weight:normal;
+}
+
+th,caption{
+	text-align:left;
+	font-weight:normal;
+}
+
+/* テーブルのデザインをする際に必ず必要なもの */
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	width: 100%;
+}
+
+a { display: block;}
+/*リンクの点線消す*/
+a:focus{
+	outline:none;
+}
+
+body{
+	font-size: 85%;
+	*font-size:middle;
+	*font:middle;
+	font-size: middle\9;
+	background: #fff;
+}
+
+
+
+hr{
+	display: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+
+table{
+	font-size:inherit;
+	font-size:100%;
+}
+
+
+/*----------------------------------------------------
+フォント
+----------------------------------------------------*/
+
+
+body{
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+	color:#333;
+	line-height:1.8;
+}
+
+
+
+#mainContainer #right{
+	/*-webkit-font-smoothing:antialiased;*/
+}
+/*----------------------------------------------------
+リンク
+----------------------------------------------------*/
+a,a:link,a:active,a:visited{
+	text-decoration:underline;
+	color:#0069ba;
+}
+a:hover{
+	color:#333;
+}
+
+a:hover img.alpha {
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+/*----- clearfix -----*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{ /zoom:1;} /* IE6,IE7 */
+.clear{
+	clear: both;
+}
+
+.radius-full{
+    border-radius: 5px;        /* CSS3草案 */
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 5px;   /* Firefox用 */
+}
+
+.inline-block-top {
+	display: inline-block;
+	vertical-align: top;
+	/display: inline;
+	/zoom: 1;
+}
+.inline-block-middle {
+	display: inline-block;
+	vertical-align: middle;
+	/display: inline;
+	/zoom: 1;
+}
+.inline-block-bottom {
+	display: inline-block;
+	vertical-align: bottom;
+	/display: inline;
+	/zoom: 1;
+}
+
+
+#guide .bgJAF {
+    background: #fff;
+    padding: 5.7% 14.2%;
+    margin-top: -50px;
+    width:80%;
+}
+default.css:3
