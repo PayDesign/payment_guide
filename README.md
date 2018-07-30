@@ -3,7 +3,7 @@
 
 | TH1 | TH2 |
 ----|---- 
-| セブン-イレブン | [Google](https://www.google.co.jp/) |
+| セブン-イレブン | [https://guide.payhub.jp/seven-eleven.html](https://guide.payhub.jp/seven-eleven.html) |
 | ローソン | TD4 |
 | ファミリーマート | TD4 |
 | セイコマート | TD4 |
