@@ -8,3 +8,9 @@ services:
       - 9780:80
     volumes:
       - .:/var/www/html
+    environment:
+      VIRTUAL_HOST: guide.payhub.jp
+networks:
+  default:
+    external:
+      name: common_link
