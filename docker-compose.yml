@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    container_name: guide-web
+    build: etc/docker/web
+    ports:
+      - 9780:80
+    volumes:
+      - .:/var/www/html
+    environment:
+      VIRTUAL_HOST: guide.payhub.jp
+networks:
+  default:
+    external:
+      name: common_link
