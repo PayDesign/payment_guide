@@ -10,6 +10,7 @@ services:
       - .:/var/www/html
     environment:
       VIRTUAL_HOST: guide.payhub.jp
+    restart: always
 networks:
   default:
     external:
