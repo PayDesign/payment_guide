@@ -3,15 +3,12 @@ version: '3'
 services:
   web:
     container_name: guide-web
-    build: etc/docker/web
+    build:
+      context: ./etc/docker/web
+      args:
+        APP_ENV: $APP_ENV
     ports:
       - 9780:80
     volumes:
       - .:/var/www/html
-    environment:
-      VIRTUAL_HOST: guide.payhub.jp
-    restart: always
-networks:
-  default:
-    external:
-      name: common_link
+
