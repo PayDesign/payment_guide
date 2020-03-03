@@ -15,6 +15,7 @@ RUN apt-get update \
 ENV LANG C.UTF-8
 WORKDIR /var/www/html
 
+COPY . /var/www/html
 COPY etc/vim/vimrc /root/.vimrc
 COPY etc/docker/web/nginx.conf /etc/nginx/nginx.conf
 COPY etc/docker/web/conf.d/${APP_ENV}.conf /etc/nginx/conf.d/
