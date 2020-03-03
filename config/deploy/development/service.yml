@@ -1,0 +1,20 @@
+family: payment_guide-development
+task_role_arn: ''
+network_mode: bridge
+container_definitions:
+- name: web
+  image: 172972874842.dkr.ecr.ap-northeast-1.amazonaws.com/payment_guide-web:{{tag}}
+  memory_reservation: 96
+  port_mappings:
+  - container_port: 80
+    host_port: 0
+    protocol: tcp
+  essential: true
+  readonly_root_filesystem: false
+  log_configuration:
+    log_driver: awslogs
+    options:
+      awslogs-group: ecs-payment_guide
+      awslogs-region: ap-northeast-1
+      awslogs-stream-prefix: payment_guide
+

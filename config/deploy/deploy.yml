@@ -1,0 +1,52 @@
+auto_deploy:
+  - branch: develop
+    cluster: mpfront
+    service: kaihipay-lp-development
+
+targets:
+  - name: dev-deploy
+    cluster: mpfront
+    service: kaihipay-lp-development
+  - name: prd-deploy
+    cluster: payhub
+    service: kaihipay-lp-production
+
+clusters:
+  - name: mpfront
+    services:
+      kaihipay-lp-development:
+        containers:
+          - name: web
+            build:
+              context: ..
+              dockerfile: ./etc/docker/web/Dockerfile
+              args:
+                APP_ENV: development
+                SET_REAL_IP_FROM: 172.30.0.0/16
+                SERVER_NAME: kaihipaylp.mpfront.com
+          - name: app
+            build:
+              context: ..
+              dockerfile: ./etc/docker/app/Dockerfile
+              args:
+                APP_ENV: development
+        path: ./deploy/development/service.yml
+  - name: payhub
+    services:
+      kaihipay-lp-production:
+        containers:
+          - name: web
+            build:
+              context: ..
+              dockerfile: ./etc/docker/web/Dockerfile
+              args:
+                APP_ENV: production
+                SET_REAL_IP_FROM: 172.29.0.0/16
+                SERVER_NAME: lp.kaihipay.jp
+          - name: app
+            build:
+              context: ..
+              dockerfile: ./etc/docker/app/Dockerfile
+              args:
+                APP_ENV: production
+        path: ./deploy/production/service.yml

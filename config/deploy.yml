@@ -1,0 +1,36 @@
+targets:
+  - name: dev-deploy
+    cluster: mpfront
+    service: payment_guide-development
+  - name: prd-deploy
+    cluster: payhub
+    service: payment_guide-production
+
+clusters:
+  - name: mpfront
+    services:
+      payment_guide-development:
+        containers:
+          - name: web
+            build:
+              context: ..
+              dockerfile: ./etc/docker/web/Dockerfile
+              args:
+                APP_ENV: development
+                SET_REAL_IP_FROM: 172.30.0.0/16
+                SERVER_NAME: guide.mpfront.com
+        path: ./deploy/development/service.yml
+  - name: payhub
+    services:
+      payment_guide-production:
+        containers:
+          - name: web
+            build:
+              context: ..
+              dockerfile: ./etc/docker/web/Dockerfile
+              args:
+                APP_ENV: production
+                SET_REAL_IP_FROM: 172.29.0.0/16
+                SERVER_NAME: guide.payhub.jp
+        path: ./deploy/production/service.yml
+
