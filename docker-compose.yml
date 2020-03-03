@@ -4,7 +4,8 @@ services:
   web:
     container_name: guide-web
     build:
-      context: ./etc/docker/web
+      context: .
+      dockerfile: ./etc/docker/web/Dockerfile
       args:
         APP_ENV: $APP_ENV
     ports:

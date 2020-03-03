@@ -15,11 +15,9 @@ RUN apt-get update \
 ENV LANG C.UTF-8
 WORKDIR /var/www/html
 
-COPY .vimrc /root/.vimrc
-COPY .htpasswd /etc/nginx/.htpasswd
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY conf.d/${APP_ENV}.conf /etc/nginx/conf.d/
-RUN rm /etc/nginx/conf.d/default.conf
+COPY etc/vim/vimrc /root/.vimrc
+COPY etc/docker/web/nginx.conf /etc/nginx/nginx.conf
+COPY etc/docker/web/conf.d/${APP_ENV}.conf /etc/nginx/conf.d/
 
 RUN if [ "$APP_ENV" = 'development' -o "$APP_ENV" = 'production' ]; then \
       sed -i "s%127.0.0.1%$SET_REAL_IP_FROM%" /etc/nginx/nginx.conf; \
@@ -29,6 +27,6 @@ RUN if [ -n "$SERVER_NAME" ]; then \
       sed -i "s%localhost%$SERVER_NAME%" /etc/nginx/conf.d/${APP_ENV}.conf; \
   fi
 
-COPY docker-entrypoint.sh /bin/docker-entrypoint.sh
+COPY etc/docker/web/docker-entrypoint.sh /bin/docker-entrypoint.sh
 CMD ["/bin/docker-entrypoint.sh"]
 
