@@ -15,25 +15,11 @@
 | ペイジー | [https://guide.payhub.jp/payeasy.html](https://guide.payhub.jp/payeasy.html) |
 
 
-## local setup
+## 配備場所
 
-### Requirement
+- [payhub環境のS3バケット] guide.payhub.jp
+- [mpfront環境のS3バケット] guide.mpfront.com
 
-* [docker](https://docs.docker.com/install/)
-* [docker-compose](https://docs.docker.com/compose/)
+## 構成図
 
-### Installation
-
-本番環境にてnginx-proxyと連携している関係で、 docker network を作成する
-```
-docker network create common_link
-```
-
-```
-$ docker-compose build
-$ docker-compose up
-```
-
-### Access URL
-ex)
-http://localhost:9780/seven-eleven.html
+![構成図](README_diagram.drawio.svg) 
